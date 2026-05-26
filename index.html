@@ -2750,29 +2750,42 @@
     }
 
     /* ══ FLOAT WA ══ */
-    .float-wa {
-      position: fixed;
-      bottom: 26px;
-      right: 26px;
-      z-index: 998;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: #25d366;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.55rem;
-      text-decoration: none;
-      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.5);
-      animation: pulseWA 2s infinite;
-      transition: transform 0.3s;
-    }
+     .float-wa {
+  position: fixed;
+  right: 20px;
+  bottom: 85px;   /* Above goto-top */
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  background: #25d366;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  font-size: 1.3rem;
+
+  z-index: 3000;
+
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+
 
     .float-wa:hover {
       transform: scale(1.12);
     }
+    /* Mobile */
+@media(max-width:768px){
+  .float-wa{
+    right:14px;
+    bottom:78px;
+  }
+}
 
     @keyframes pulseWA {
 
@@ -3343,9 +3356,22 @@
       <div class="scroll-cue">
         <i class="fas fa-chevron-down"></i><span>Scroll</span>
       </div>
+      
+<a href="https://wa.me/919187672797"
+   class="float-wa"
+   target="_blank">
+   <i class="fab fa-whatsapp"></i>
+</a>
     </section>
 
     <!-- FEATURES STRIP -->
+     <a
+  href="https://wa.me/919999999999"
+  class="float-wa"
+  target="_blank"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
     <div class="features-strip">
       <div class="feat-item">
         <div class="feat-icon"><i class="fas fa-users"></i></div>
